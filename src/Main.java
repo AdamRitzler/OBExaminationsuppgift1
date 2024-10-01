@@ -4,6 +4,7 @@ public class Main {
 
     public Main(){
         //Växterna som finns på hotellet.
+        // hrj hrj
         Plants cacti = new Cactus("Igge", 0.2);
         Plants palm1 = new PalmTree("Laura", 5);
         Plants köttätandeväxt = new CarnivorousPlant("Meatloaf", 0.5);
