@@ -8,6 +8,10 @@ public abstract class Plants implements IPlanter {
     }
 public abstract EWateringPlants getWater();
 
+    public double getHeight() {
+        return height;
+    }
+
     public String getName() {
         return Name;
     }

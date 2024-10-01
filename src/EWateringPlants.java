@@ -1,7 +1,7 @@
 public enum EWateringPlants {
-    cactus("mineralvatten"),
-    palmTree("kranvatten"),
-    carnivorouisPlant("proteindryck");
+    cactus(" liter mineralvatten per dag."),
+    palmTree(" liter kranvatten per dag."),
+    carnivorouisPlant(" liter proteindryck per dag");
 private String planta;
 
     EWateringPlants(String planta) {

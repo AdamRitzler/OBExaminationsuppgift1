@@ -2,10 +2,13 @@ import javax.swing.*;
 
 //Cactus ärver av Classen Plants.
 public class Cactus extends Plants{
-
-
-
     private double waterPerDay = 0.02;
+
+    @Override
+    public double calculatePlantsWater() {
+        return waterPerDay;
+    }
+
     @Override
     public EWateringPlants getWater(){
         return EWateringPlants.cactus;
@@ -16,6 +19,6 @@ public class Cactus extends Plants{
    }
 
     public void printPlants(){
-        JOptionPane.showMessageDialog(null,"Kaktusen " + getName() + " behöver " + waterPerDay + " liter "+ getWater().getEnum() + " per dag.");
+        JOptionPane.showMessageDialog(null,"Kaktusen " + getName() + " behöver " + calculatePlantsWater() + getWater().getEnum());
     }
 }
