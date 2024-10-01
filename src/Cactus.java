@@ -16,6 +16,6 @@ public class Cactus extends Plants{
    }
 
     public void printPlants(){
-        JOptionPane.showMessageDialog(null,"Kaktusen " + getName() + " behöver " + waterPerDay + " liter "+ getWater() + " per dag.");
+        JOptionPane.showMessageDialog(null,"Kaktusen " + getName() + " behöver " + waterPerDay + " liter "+ getWater().getEnum() + " per dag.");
     }
 }
