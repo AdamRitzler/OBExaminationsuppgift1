@@ -1,25 +1,28 @@
 import javax.swing.*;
 
-//Cactus ärver av Classen Plants.
-public class Cactus extends Plants{
+//Cactus ärver av klassen Plants.
+public class Cactus extends Plants {
     // inkapsling av instansvariabler
     private double waterPerDay = 0.02;
+
+    public Cactus(String name, double height) {
+        super(height, name);
+
+    }
 
     @Override
     public double calculatePlantsWater() {
         return waterPerDay;
     }
 
+    //returnar enumen värde CACTUS som sedan används i printPlants
     @Override
-    public EWateringPlants getWater(){
-        return EWateringPlants.cactus;
+    public EWateringPlants getWater() {
+        return EWateringPlants.CACTUS;
     }
-    public Cactus(String name, double height) {
-        super(height, name);
 
-   }
-
-    public void printPlants(){
-        JOptionPane.showMessageDialog(null,"Kaktusen " + getName() + " behöver " + calculatePlantsWater() + getWater().getWaterTyp());
+    //polymorfism den får metoden från superklassen och skriver över metoden.
+    public void printPlants() {
+        JOptionPane.showMessageDialog(null, "Kaktusen " + getName() + " behöver " + calculatePlantsWater() + getWater().getWaterTyp());
     }
 }

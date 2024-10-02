@@ -1,5 +1,6 @@
 import javax.swing.*;
 
+//ärver höjd och name från klassen plants
 public class CarnivorousPlant extends Plants {
     // inkapsling av instansvariabler
     private double waterPerDay = 0.2;
@@ -9,9 +10,10 @@ public class CarnivorousPlant extends Plants {
         super(height, name);
     }
 
+    //returnar enumen värde carnivorousPlant som sedan används i printPlants
     @Override
     public EWateringPlants getWater() {
-        return EWateringPlants.carnivorouisPlant;
+        return EWateringPlants.CARNIVOROUSPLANT;
     }
 
     @Override
