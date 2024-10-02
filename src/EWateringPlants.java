@@ -7,7 +7,7 @@ private String planta;
     EWateringPlants(String planta) {
         this.planta = planta;
     }
-    public String getEnum(){
+    public String getWaterTyp(){
         return this.planta;
     }
 }

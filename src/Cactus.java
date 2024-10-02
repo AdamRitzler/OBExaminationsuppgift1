@@ -2,6 +2,7 @@ import javax.swing.*;
 
 //Cactus ärver av Classen Plants.
 public class Cactus extends Plants{
+    // inkapsling av instansvariabler
     private double waterPerDay = 0.02;
 
     @Override
@@ -19,6 +20,6 @@ public class Cactus extends Plants{
    }
 
     public void printPlants(){
-        JOptionPane.showMessageDialog(null,"Kaktusen " + getName() + " behöver " + calculatePlantsWater() + getWater().getEnum());
+        JOptionPane.showMessageDialog(null,"Kaktusen " + getName() + " behöver " + calculatePlantsWater() + getWater().getWaterTyp());
     }
 }
