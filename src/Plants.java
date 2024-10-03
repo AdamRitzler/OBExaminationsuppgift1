@@ -17,7 +17,7 @@ public abstract class Plants implements IPlanter {
     public String getName() {
         return Name;
     }
-
+//polimorfism för att alla subklasser använder printPlants metoden
     public void printPlants() {
 
     }

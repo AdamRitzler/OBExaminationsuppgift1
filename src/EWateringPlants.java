@@ -2,7 +2,7 @@ public enum EWateringPlants {
     CACTUS(" liter mineralvatten per dag."),
     PALMTREE(" liter kranvatten per dag."),
     CARNIVOROUSPLANT(" liter proteindryck per dag");
-    private String planta;
+    private final String planta;
 
 
     EWateringPlants(String planta) {
